@@ -1,0 +1,505 @@
+/********************
+								Reset
+											********************/
+html,body,address,blockquote,div,form,fieldset,caption,h1,h2,h3,h4,h5,h6,hr,ul,ol,ul,li,dl,dt,dd,table,tr,td,th,p,img {
+	margin: 0; 
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+ul, ol, li {
+	list-style-type: none; 	
+}
+
+img,fieldset {
+	border: none;
+}
+
+input, select, textarea {
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/********************
+								Body
+											********************/
+body {
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 100%;
+	line-height: 120%;
+	background: #FFF;
+	color: #64696b;
+}
+
+#body_background,
+.body_background {
+	width: 100%;
+	min-width: 1280px;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1
+}
+
+.body_background {
+	position: fixed;
+}
+
+/********************
+						  Wrapper
+											********************/
+#wrapper {
+	width: 924px;
+	min-height: 100%;
+	margin: 0 auto -80px;
+	font-size: .75em;
+}
+
+* html #wrapper {
+	height: 100%;
+}
+
+/********************
+						  Header
+											********************/
+#header {
+	width: 904px;
+	margin: 0 10px;
+	position: relative;
+	z-index: 2;
+	float: left;
+}
+
+#header #logo {
+	width: 248px;
+	margin: 25px 0;
+	float: left;
+}
+
+#header #logo a {
+	width: 248px;
+	height: 75px;
+	display: block;
+	background: url(../images/logo.png);
+	text-transform: uppercase;
+	text-indent: -9999em;
+}
+
+#header #headlines {
+	width: 525px;
+	height: 75px;
+	line-height: 75px;
+	margin-top: 25px;
+	float: left;	
+}
+
+#header #headlines p {
+	margin: 0 0 0 10px;
+	float: left;
+	display: inline-block;
+	color: #FFF;
+	text-transform:uppercase;
+}
+
+#header #headlines p + p {
+	margin: 0 10px 0 0;
+	float: right;
+	text-transform:lowercase;
+}
+
+#header #headlines p span {
+	color: #d9e021;
+}
+
+#header #headlines p b {
+	display: none;
+}
+
+#header #headlines p a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header #book_now {
+	width: 115px;
+	margin: -2px 16px 0 0;
+	float: right;
+}
+
+#header #book_now a {
+	width: 115px;
+	height: 147px;
+	display: block;
+	background: url(../images/booking_tag.png);
+	text-transform: uppercase;
+	text-indent: -9999em;	
+}
+
+#header #book_now_gr {
+	width: 115px;
+	margin: -2px 16px 0 0;
+	float: right;
+}
+#header #book_now_gr a {
+	width: 115px;
+	height: 147px;
+	display: block;
+	background: url(../images/booking_tag_gr.png);
+	text-transform: uppercase;
+	text-indent: -9999em;	
+}
+
+/********************
+						  Main
+											********************/
+#main {
+	width: 924px;
+	float: left;
+	margin-top: -34px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+#menu_background {
+	width: 924px;
+	height: 64px;
+	background: url(../images/menu_background.png) 0 0 no-repeat;
+}
+
+/********************
+						     Menu
+											********************/
+#menu {
+	width: 904px;
+	height: 30px;
+	margin: 24px 10px 0;
+	float: left;
+	clear: both;
+	background: #e50f52; 
+}
+
+#menu li {
+	height: 30px;
+	float: left;
+}
+
+#menu li + li {
+	border-left: solid #FFF;
+	border-width: 0 0 0 1px;
+}
+
+#menu li a {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 18px 0 10px;
+	display: block;
+	background: #e50f52;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;	
+	font-size: .8em;
+}
+
+#menu li a:hover,
+#menu li a:focus,
+#menu li a.current {
+	background: #bd0f37
+}
+
+/********************
+		Content & Sidebar
+											********************/
+#content_wrapper {
+	width: 924px;
+	padding: 0 0 40px;
+	float: left;
+	background: #FFF;
+}
+
+/********************
+							Content 
+											********************/
+#content {
+	width: 694px;
+	margin: 0 10px;
+	float: left;
+	display: inline-block
+}
+
+#content h1 {
+	padding: 0px 100px 15px 15px;
+	font-size: 1.3em;
+	color: #88e00b;
+	text-transform: uppercase;
+	font-weight: normal;	
+}
+
+#content h1 b {
+	display: inline-block;
+	font-weight: normal;
+	color: #bd0f37;
+}
+
+#content h1 span {
+	height: 8px;
+	display: block;
+	border-bottom: solid #88e00b;
+	border-width: 0 0 1px 0;	
+}
+
+#content p {
+	margin: 0 100px 0 15px;
+	line-height: 1.1;
+	text-align: justify;
+	font-size: .91em;
+	font-weight: bold;
+}
+
+#content p + p {
+	margin: 15px 100px 15px 15px;
+	font-weight: normal;
+}
+
+.contact-form {
+	margin: 15px 100px 15px 15px;
+	font-weight: normal;
+}
+
+/********************
+							Gallery
+										********************/
+.gallery {
+	width: 694px;
+	float: left;
+	clear: both;
+	list-style-type: none;
+	margin: 15px 100px 15px 15px;
+}
+
+.gallery li {
+	width: 120px;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;	
+}
+
+.gallery li img {
+	width: 100px;
+	height: 75px;
+	padding: 3px;
+	border: 1px solid #aaacad; 
+}
+
+.gallery li img:hover {
+	border-color: #bd0f37; 
+}
+
+
+
+/********************
+							Sidebar 
+											********************/
+#sidebar {
+	width: 200px;
+	float: left;
+}
+
+#sidebar #news_box {
+	width: 200px;
+	margin-bottom: 10px;
+	padding: 50px 0 20px;
+	float: left;
+	background: #f3f5b8 url(../images/news_box.png) 0 0 no-repeat;
+}
+
+#sidebar #news_box h2 {
+	padding: 0 15px 12px 0;
+	text-align: right;
+	font-size: 1.4em;
+	color: #9c0c26;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+#sidebar #news_box h2:first-letter {
+		font-size: 1.5em;	
+}
+
+#sidebar #news_box p {
+	margin: 0 15px;
+	line-height: 1.1;
+	color: #560f11;
+	text-align: justify;
+}
+
+#sidebar #news_box p + p {
+	margin: 12px 15px 0; 
+}
+
+#sidebar #news_box a {
+	text-decoration: none;
+	color: #64696b; 
+	text-align: right;
+}
+
+#sidebar .photo_box,
+#sidebar .photo_box_google,
+#sidebar .photo_box2{
+	width: 200px;
+	margin: 0 0 20px;
+	padding-top: 155px;
+	float: left;
+	background: url(../images/nafplio.jpg) no-repeat;
+	text-align: right;
+}
+
+#sidebar .photo_box2{
+ background: url(../images/pension_filyra.jpg) no-repeat;	
+}
+
+#sidebar .photo_box_google{
+ background: url(../images/location_nafplio.bmp) no-repeat;	
+}
+
+#sidebar .photo_box a,
+#sidebar .photo_box_google a,
+#sidebar .photo_box2 a{
+	text-decoration: none;
+	color: #64696b; 
+}
+
+#sidebar #social_icons,
+#sidebar #flags {
+	width: 118px;
+	float: right;
+}
+
+#sidebar #social_icons li,
+#sidebar #flags li {
+	margin-left: 0;
+	height: 32px;
+	float: left;
+}
+
+#sidebar #social_icons li + li, 
+#sidebar #flags li + li {
+	margin-left: 11px;
+}
+
+#sidebar #social_icons li a, 
+#sidebar #flags li a{
+	width: 32px;
+	height: 32px;
+	display: block;
+	text-transform: uppercase;
+	text-indent: -9999em;
+}
+
+#sidebar #social_icons li a.facebook {
+	background: url(../images/social_icons.png) 0 0;
+}
+
+#sidebar #social_icons li a.twitter {
+	background: url(../images/social_icons.png) -43px 0;
+}
+
+#sidebar #social_icons li a.linkedin {
+	background: url(../images/social_icons.png)-86px 0;
+
+}
+
+#sidebar #flags li a.english {
+	background: url(../images/flags.png) -43px 0;
+}
+
+#sidebar #flags li a.greek {
+	background: url(../images/flags.png) -86px 0;
+}
+/********************
+							Footer 
+											********************/
+#footer {
+	width: 924px;
+	margin: 0 auto;
+	font-size: .75em;
+}
+
+#footer,
+.push {
+	height: 80px;
+	clear: both;
+}
+
+#footer_menu {
+	width: 452px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 0 0 10px;
+	float: left;
+	clear: both;
+	display: inline-block;
+	vertical-align:middle; 
+}
+
+#footer_menu li {
+	margin-top: 32px;
+	float: left;
+	line-height: .75em;
+}
+
+#footer_menu li + li {
+	border-left: solid #FFF;
+	border-width: 0 0 0 1px;
+}
+
+#footer_menu li a {
+	display: block;
+	padding: 0 10px;
+	color: #FFF;
+	font-size: .75em;
+	text-decoration: none;
+}
+
+#footer_menu li a.first {
+	padding: 0 10px 0 0;
+}
+
+#footer_credits {
+	width: 245px;
+	height: 28px;
+	margin: 26px 0 0;
+	padding-left: 35px;
+	float: right;
+	background: url(../images/e-magine_logo.gif) no-repeat;
+	font-size: .75em;
+	color: #FFF;	
+}
+
+#footer_credits p {
+	line-height: 14px;
+}
+
+#footer_credits p a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#footer_menu li a:hover,
+#footer_menu li a:focus,
+#footer_credits p a:hover,
+#footer_credits p a:focus {
+	text-decoration: underline;
+}
+
+
+
+
+											
